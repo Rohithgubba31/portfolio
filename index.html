@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website HTML CSS Only | Codehal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Add Typed.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Rohith</a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class='bx bx-menu'></i>
+        </label>
+        <nav class="navbar">
+            <a href="#"class = "active" >Home</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm G SRI SAI ROHITH</h1>
+            <h3 class="typing-text"></h3>
+            <p>I'm a Computer Science and Business Systems student with hands-on experience in machine learning and web development. Passionate about creating user-friendly applications, I developed "Realmify" and "Forecaster" to enhance educational sharing and weather forecasting. Skilled in Python, Java, and various databases, I’m dedicated to leveraging technology to solve real-world problems.</p>
+            <div class="btn-box">
+                <a href="" class="btn">Resume</a>
+            </div>
+            <div class="home-sci">
+                <a href="https://github.com/Rohithgubba31"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/rohith-gubba/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/rohith_gubba.31/"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <span class="home-imgHover"></span>        
+    </section>
+    <section class="Skills" id="Skills">
+        <h2 class="heading">Skills</h2>
+        <div class="Skills-container">
+            <div class="Skills-box">
+                <div class="Skills-info">
+                    <i class='bx bxl-java'></i>
+                    <h4>Java</h4>
+                </div>
+            </div>
+            <div class="Skills-box">
+                <div class="Skills-info">
+                    <i class='bx bxl-aws'></i>
+                    <h4>AWS</h4>
+                </div>
+            </div>
+            <div class="Skills-box">
+                <div class="Skills-info">
+                    <i class='bx bxl-html5'></i>
+                    <h4>HTML</h4>
+                </div>
+            </div>
+            <div class="Skills-box">
+                <div class="Skills-info">
+                    <i class='bx bxl-css3'></i>
+                    <h4>CSS</h4>
+                </div>
+            </div>
+            <div class="Skills-box">
+                <div class="Skills-info">
+                    <i class='bx bxl-javascript'></i>
+                    <h4>JavaScript</h4>
+                </div>
+            </div>
+            <div class="Skills-box">
+                <div class="Skills-info">
+                    <i class='bx bxs-registered'></i>
+                    <h4>ReactJS</h4>
+                </div>
+            </div>
+            <div class="Skills-box">
+                <div class="Skills-info">
+                    <i class='bx bxl-mongodb'></i>
+                    <h4>MongoDB</h4>
+                </div>
+            </div>
+            <div class="Skills-box">
+                <div class="Skills-info">
+                    <i class='bx bxl-git'></i>
+                    <h4>Git</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var typed = new Typed(".typing-text", {
+            strings: ["Software Developer"],
+            loop: true,
+            typeSpeed: 50,
+            backSpeed: 25,
+            backDelay: 500,
+        });
+        document.addEventListener('visibilitychange',
+        function () {
+            if (document.visibilityState === "visible") {
+                document.title = "Portfolio | Rohith Gubba";
+                $("#favicon").attr("href", "assets/images/favicon.png");
+            } else {
+                document.title = "Come Back To Portfolio";
+                $("#favicon").attr("href", "assets/images/favhand.png");
+            }
+        });
+    </script>
+    <section class="Projects" id="Projects">
+        <h2 class="heading">Projects</h2>
+        <div class="Projects-container">
+            <div class="Projects-box">
+                <div class="Projects-info" >
+                    <i class='bx bxs-cloud-rain'></i>
+                    <h4>Weather Application</h4>
+                    <p>Created a weather app using HTML, CSS, and JavaScript with OpenWeatherMap API integration for real-time data. </p>
+                    <a href="https://github.com/yourusername/weather-app" class="btn" target="_blank">View Source Code</a>
+                </div>
+            </div>
+            <div class="Projects-box">
+                <div class="Projects-info">
+                    <i class='bx bx-book-open'></i>
+                    <h4>Study Vault</h4>
+                    <p>StudyVault simplifies submitting, organizing, and searching educational materials. Users can submit resources and navigate categorized materials. Built with HTML, CSS, JavaScript, Node.js, and MySQL.</p>
+                    <a href="https://github.com/yourusername/weather-app" class="btn" target="_blank">View Source Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+            </div>
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
